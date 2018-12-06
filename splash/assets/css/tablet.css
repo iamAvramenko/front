@@ -1,0 +1,16 @@
+@media(max-width: 1169px) {
+    .container {
+        width: 768px;
+        padding: 0 20px;
+    }
+
+        .splash main {
+        height: 100%;
+    }
+
+    .footer_bottom {
+        padding: 15px 0;
+    }
+
+
+}

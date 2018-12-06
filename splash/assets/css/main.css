@@ -1,0 +1,86 @@
+html, body, header, nav, section, footer, article, main, div, p, h1, h2, h3, ul, li {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+
+section {
+    overflow: hidden;
+}
+
+a, span {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: "SF UI Text", sans-serif;
+    background: #fafafa url("assets/img/bg_splash.png") no-repeat 50% 50%;
+    color: #414042;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #313131;
+}
+
+h2 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    color: #313131;
+}
+
+h3 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #313131;
+}
+
+h4 {
+    font-family: "SF UI Text", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #313131;
+}
+
+a {
+    text-decoration: none;
+    color: #414042;
+}
+
+@media (min-width: 1170px) {
+    .hide_desktop {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1169px) {
+    .hide_tablet {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .hide_mobile {
+        display: none;
+    }
+}
+

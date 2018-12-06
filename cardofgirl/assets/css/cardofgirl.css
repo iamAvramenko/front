@@ -1,0 +1,647 @@
+/* -- */
+
+.breadcrumb {
+    display: inline-flex;
+    list-style: none;
+    font-size: 0.875em;
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    color: #bfbebe;
+    padding-right: 3px;
+}
+
+.breadcrumb a::after {
+    content: '/';
+    padding-left: 3px;
+}
+
+.breadcrumb .active {
+    color: #000;
+}
+
+@media (max-width: 767px) {
+    .breadcrumb {
+        display: none;
+    }
+}
+
+@media (max-width: 1169px) {
+    .breadcrumb {
+        margin-top: 40px;
+    }
+}
+
+/* -- */
+
+.card_of_girl .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.card_of_girl .title .img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.card_of_girl .left_title,
+.card_of_girl .right_title {
+    display: flex;
+    align-items: center;
+}
+
+.card_of_girl .left_title .img {
+    background-position: 65% 5%;
+    background-size: 150%;
+}
+
+.card_of_girl .right_title .img {
+    background-position: 52% 56%;
+    background-size: 250%;
+}
+
+.card_of_girl .title .name {
+    font-size: 16px;
+    line-height: 16px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    font-family: "Playfair Display";
+    font-weight: 700;
+    padding: 0 20px;
+}
+
+.card {
+    display: flex;
+    font-size: 14px;
+    color: #191919;
+}
+
+.card a {
+    color: #000;
+}
+
+.card_left {
+    display: flex;
+    position: relative;
+}
+
+.card_left .img {
+    position: relative;
+    width: 380px;
+    height: 507px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: ;
+}
+
+.card_left .img .vip {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.card_left .verified {
+    position: absolute;
+    top: 21px;
+    left: 15px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.card_left .gallery {
+    width: 185px;
+    margin-left: 15px;
+}
+
+.card_left .gallery img {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 10px;
+}
+
+.card_left .report_fake {
+    position: absolute;
+    bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_left2 {
+    position: relative;
+    margin-bottom: 65px;
+}
+
+.card_left2 h1 {
+    position: absolute;
+    top: -42px;
+}
+
+.card_right .caption {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.card_right .total {
+    font-size: 14px;
+    margin: 0 0 15px;
+}
+
+.card_right .total p {
+    margin-bottom: 15px;
+}
+
+.card_right .total span {
+    padding-right: 15px;
+}
+
+.card_right .name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.card_right .information {
+    display: flex;
+    margin: 20px 0 15px;
+}
+
+.card_right .information_left {
+    white-space: nowrap;
+}
+
+.card_right .information_left{
+    width: 135px;
+}
+
+.card_right .information_left a {
+    text-transform: uppercase;
+    color: #d42626;
+    white-space: nowrap;
+}
+
+.card_right .information_left a:hover {
+    opacity: 0.8;
+}
+
+.card_right .card_review {
+    line-height: 24px;
+    color: #666;
+    padding-bottom: 20px;
+}
+
+.card_right .card_review:nth-child(n+2) {
+    padding: 0;
+}
+
+.card_right .btn-red {
+    display: inline-block;
+    width: 220px;
+    height: 50px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.075em;
+    border-radius: 2px;
+    background-image: -moz-linear-gradient(90deg, rgb(199, 27, 27) 0%, rgb(214, 55, 55) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(199, 27, 27) 0%, rgb(214, 55, 55) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(199, 27, 27) 0%, rgb(214, 55, 55) 100%);
+    margin-right: 10px;
+    transition: all 0.2s;
+}
+
+.card_right .btn-red:hover {
+    background-image: -moz-linear-gradient( 270deg, rgb(218,75,75) 0%, rgb(201,47,47) 100%);
+    background-image: -webkit-linear-gradient( 270deg, rgb(218,75,75) 0%, rgb(201,47,47) 100%);
+    background-image: -ms-linear-linear-gradient( 270deg, rgb(218,75,75) 0%, rgb(201,47,47) 100%);
+}
+
+.report_fake .btn-white,
+.reviews .btn-white {
+    display: inline-block;
+    width: 210px;
+    height: 50px;
+    color: #c71b1b;
+    letter-spacing: 0.075em;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #c71b1b;
+    background: #fff;
+    transition: all 0.2s;
+}
+
+.report_fake .btn-white:hover,
+.reviews .btn-white:hover {
+    color: #fff;
+    background-image: -moz-linear-gradient( 270deg, rgb(218,75,75) 0%, rgb(201,47,47) 100%);
+    background-image: -webkit-linear-gradient( 270deg, rgb(218,75,75) 0%, rgb(201,47,47) 100%);
+    background-image: -ms-linear-linear-gradient( 270deg, rgb(218,75,75) 0%, rgb(201,47,47) 100%);
+}
+
+.card_right .information li {
+    margin-bottom: 13px;
+}
+
+.card_right .information .like {
+    position: relative;
+    bottom: 7px;
+    height: 29px;
+    margin-bottom: 0;
+}
+
+.card_right .information img {
+    padding-right: 8px;
+}
+
+.card_right .information_right {
+    font-weight: 700;
+    color: #000;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+.card_right2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card_right2 .contacts {
+    justify-content: space-between;
+}
+
+.card_right2 .contacts .information_left {
+    width: 100px;
+}
+
+.card_right2 .reviews {
+    justify-content: space-between;
+}
+
+.card_right2 .reviews .information_left {
+    width: 85px;
+}
+
+.reviews .information_right {
+    position: relative;
+}
+
+.reviews .information_right .btn-white {
+    position: absolute;
+    bottom: -65px;
+    left: -103px;
+}
+
+.information_right .social a {
+    font-weight: normal;
+    text-decoration: underline;
+    padding-right: 40px;
+}
+
+.information_right .social a:last-child {
+    padding-right: 0;
+}
+
+.information_right .social a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+.information_right .green_color {
+    color: #1db339;
+}
+
+@media (min-width: 1169px) {
+    .card_right {
+        padding-left: 30px;
+    }
+}
+
+/* -- */
+
+a.girl.girl_video {
+    width: 580px;
+}
+
+a.girl.girl_video i {
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #d7e1e7;
+    border-radius: 30px;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    background-image: url(../img/play.png);
+    background-repeat: no-repeat;
+    background-position: 55% center;
+    background-size: 18px;
+    transition: all 0.2s;
+}
+
+a.girl.girl_video i:hover {
+    transform: scale(1.1);
+}
+
+a.girl.girl_video i:hover {
+    background-color: rgba(116, 116, 116, 0.5);
+}
+
+a.girl.girl_video iframe {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+/* -- */
+
+section.grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+section.grid h1 {
+    flex: 0 1 100%;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+section.grid h1 > a {
+    font-family: "SF UI Text", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+}
+
+section.grid h1 > a:hover {
+    text-decoration: underline;
+}
+
+.girl {
+    display: block;
+    width: 280px;
+    height: 374px;
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    position: relative;
+}
+
+.bg_img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+.bg_img > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-position: center top;
+    background-size: cover;
+    transition: all 0.2s;
+}
+
+.bg_img:hover > div {
+    transform: scale(1.1);
+}
+
+.girl span.age {
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.girl span.verification {
+    position: absolute;
+    top: 21px;
+    right: 40px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.girl span.vip {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.girl span.location {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.girl span.location span {
+    position: absolute;
+    top: 5px;
+    left: 23px;
+    letter-spacing: 0.05rem;
+    font-weight: 300;
+    font-size: 13px;
+    color: #fff;
+}
+
+.girl span.location b {
+    font-weight: 600;
+}
+
+.girl span.name {
+    font-size: 16px;
+    line-height: 16px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    position: absolute;
+    left: 0px;
+    bottom: -34px;
+    font-family: "Playfair Display";
+    font-weight: 700;
+}
+
+.girl span.rank {
+    position: absolute;
+    right: 10px;
+    font-size: 13px;
+    line-height: 13px;
+    bottom: -32px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.girl span.rank:after {
+    position: absolute;
+    right: -13px;
+    bottom: -2px;
+    content: "";
+    display: block;
+    background-image: url(../img/arr_up.png);
+    width: 5px;
+    height: 18px;
+    background-size: 100% 100%;
+}
+
+.girl span.city {
+    color: #000;
+    font-size: 14px;
+    line-height: 14px;
+    position: absolute;
+    right: 0px;
+    bottom: -33px;
+}
+
+.girls_of_week {
+    width: 578px;
+    height: 374px;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 52px 0px 0px 40px;
+}
+
+.girls_of_week > p {
+    color: #191919;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Playfair Display";
+    padding: 0px 0px 18px;
+    position: relative;
+}
+
+.girls_of_week > span {
+    color: #747474;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 270px;
+    display: block;
+    position: relative;
+}
+
+.girls_of_week .inner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.girls_of_week .inner a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    outline: none;
+}
+
+.girls_of_week .inner .slick-list {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.girls_of_week .inner .slick-track {
+    height: 100%;
+}
+
+.girls_of_week .inner .slick-slide > div {
+    height: 100%;
+}
+
+.girls_of_week .inner a > p {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: #000;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 100px;
+}
+
+.girls_of_week .slick-dots {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.girls_of_week .slick-dots li {
+    display: block;
+    margin: 0px 4px;
+}
+
+.girls_of_week .slick-dots li button {
+    display: block;
+    background: none;
+    outline: none;
+    width: 10px;
+    height: 10px;
+    font-size: 0px;
+    line-height: 0px;
+    border: 1px solid #1d1d1c;
+    box-sizing: border-box;
+    padding: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.girls_of_week .slick-dots li.slick-active button {
+    width: 12px;
+    height: 12px;
+    background: #ff0000;
+    border: 0px;
+}
+
+/* -- */
+
+section.newest .girl {
+    margin-bottom: 75px;
+}

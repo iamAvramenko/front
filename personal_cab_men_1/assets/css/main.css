@@ -1,0 +1,1127 @@
+html, body, header, nav, section, footer, article, main, div, p, h1, h2, h3, ul, li {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+
+section {
+    overflow: hidden;
+}
+
+a, span {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: "SF UI Text", sans-serif;
+    background: #fafafa;
+    color: #414042;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #313131;
+}
+
+h2 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    color: #313131;
+}
+
+h3 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #313131;
+}
+
+h4 {
+    font-family: "SF UI Text", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #313131;
+}
+
+a {
+    text-decoration: none;
+    color: #414042;
+}
+
+@media (min-width: 1170px) {
+    .hide_desktop {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1169px) {
+    .hide_tablet {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .hide_mobile {
+        display: none;
+    }
+}
+
+/* -- */
+
+header {
+    background: #191919;
+}
+
+header .container {
+    width: 1380px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .left, header .right {
+    width: 330px;
+}
+
+header .center {
+    width: 720px;
+}
+
+@media (max-width: 1379px) {
+    header .container {
+        width: calc(100% - 20px);
+    }
+
+    header .center {
+        width: 550px;
+    }
+}
+
+header .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .left .city {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+header .left .city span {
+    color: #5a5a5a;
+}
+
+header .left .lang {
+    margin-left: 30px;
+}
+
+header .left .lang a {
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    transition: all 0.2s;
+}
+
+header .left .lang a:hover, header .left .lang a.active {
+    background: #303030;
+    color: rgba(255, 255, 255, 1);
+}
+
+header .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .right a, a.login, a.sign_up {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 1px;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0px 50px;
+}
+
+a.login {
+    background: #fff;
+    color: #191919;
+}
+
+a.sign_up {
+    color: #fff;
+    border: 1px solid #474747;
+    margin-left: 10px;
+}
+
+header .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .center a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    padding: 7px 6px;
+    overflow: hidden;
+}
+
+header .center a span {
+    position: relative;
+}
+
+header .center a:before {
+    content: "";
+    display: block;
+    background: #c71b1b;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    left: -100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+header .center a:hover:before {
+    left: 0px;
+}
+
+header .center a.logo {
+    color: #c71b1b;
+    font-family: "Playfair Display";
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+}
+
+header .center a.logo:before {
+    content: initial;
+}
+
+/* -- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0px 25px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    display: block;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 14px;
+    color: #000;
+    text-decoration: underline;
+}
+
+nav ul li a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+nav > div {
+    color: #000;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav > div span {
+    color: #bfbebe;
+}
+
+nav > div:before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 1px solid #e8e8e8;
+    background-image: url(../svg/search.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 35px;
+    margin: 0px 14px 0px 0px;
+    cursor: pointer;
+}
+
+/* -- */
+
+footer {
+    max-width: 1380px;
+    margin: 0 auto;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 50px 0px 75px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .col1 {
+    max-width: 330px;
+}
+
+footer .col1 h3 {
+    color: #c71b1b;
+    letter-spacing: 0.06em;
+    padding: 0px 0px 14px;
+}
+
+footer .col1 p {
+    color: #747474;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 0px 0px 24px;
+}
+
+footer .col1 p:last-child a {
+    color: #191919;
+    font-weight: 500;
+}
+
+footer .col1 p:last-child a:hover {
+    text-decoration: underline;
+}
+
+footer .links li {
+    padding: 0px 0px 40px;
+}
+
+footer .links li:last-child {
+    padding: 0px;
+}
+
+footer .links li a {
+    color: #191919;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 500;
+}
+
+footer .links li a:hover {
+    text-decoration: underline;
+}
+
+footer .col5 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 182px;
+}
+
+footer .col5 h3 {
+    flex: 0 1 100%;
+    letter-spacing: 0.02em;
+    padding-bottom: 18px;
+    color: #191919;
+}
+
+footer .col5 p {
+    flex: 0 1 100%;
+    color: #191919;
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 25px;
+    font-weight: 600;
+}
+
+footer .col5 a.soc {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+footer .col5 a.soc svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all 0.2s;
+}
+
+footer .col5 a.soc:hover svg {
+    fill: #c92424;
+}
+
+footer .col5 a.soc.fb svg {
+    height: 18px;
+    margin-top: -9px;
+    margin-left: -6px;
+}
+
+footer .col5 a.soc.ig svg {
+    width: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+footer .col5 a.soc.tw svg {
+    width: 19px;
+    height: auto;
+    margin-top: -8px;
+    margin-left: -9px;
+}
+
+p.copyright {
+    color: #bfbebe;
+    text-align: center;
+    display: block;
+    padding: 20px 0px;
+    font-size: 13px;
+}
+
+/* -- */
+
+.popup {
+    z-index: 15;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgba(255, 255, 255, 0.5);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    transform: translate(0%, -100%);
+}
+
+.popup.active {
+    transform: translate(0%, 0%);
+}
+
+.popup .inner {
+    width: 972px;
+    height: 424px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.popup #login_slider {
+    width: 592px;
+    height: 100%;
+    position: relative;
+}
+
+.popup #login_slider a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.popup #login_slider .slick-list {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.popup #login_slider .slick-track {
+    height: 100%;
+}
+
+.popup #login_slider .slick-slide > div {
+    height: 100%;
+}
+
+.popup #login_slider .slick-dots {
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup #login_slider .slick-dots li {
+    display: block;
+    margin: 0px 4px;
+}
+
+.popup #login_slider .slick-dots li button {
+    display: block;
+    background: none;
+    outline: none;
+    width: 10px;
+    height: 10px;
+    font-size: 0px;
+    line-height: 0px;
+    border: 1px solid #1d1d1c;
+    box-sizing: border-box;
+    padding: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.popup #login_slider .slick-dots li.slick-active button {
+    width: 12px;
+    height: 12px;
+    background: #ff0000;
+    border: 0px;
+}
+
+.popup form {
+    width: 380px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px 28px 20px;
+}
+
+.popup form p {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #191919;
+    letter-spacing: 0.075em;
+    padding: 0px 0px 20px;
+}
+
+.popup form label {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000;
+    text-align: left;
+}
+
+.popup form input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    margin: 8px 0px 14px;
+    padding: 0px 0px 0px 10px;
+    font-size: 14px;
+}
+
+.popup form .forgot {
+    display: block;
+    color: #bfbebe;
+    padding: 0px 0px 14px;
+}
+
+.popup form .button {
+    cursor: pointer;
+    display: block;
+    width: 210px;
+    height: 45px;
+    line-height: 45px;
+    background: #d33232;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0px auto 7px;
+}
+
+.popup form .button.fb {
+    color: #c71b1b;
+    background: #fff;
+    border: 1px solid #f4d1d1;
+}
+
+.popup .inner .close {
+    display: block;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-image: url(../svg/Close.svg);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.popup.sign_up .inner {
+    height: 500px;
+}
+
+.popup.sign_up .left {
+    width: 592px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-image: url(../img/week.jpg);
+    background-position: center center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 0px 0px 33px 50px;
+}
+
+.popup.sign_up .left a {
+    position: absolute;
+    top: 33px;
+    right: 50px;
+    color: #191919;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration: underline;
+    padding: 0px 10px;
+    overflow: hidden;
+}
+
+.popup.sign_up .left a span {
+    position: relative;
+}
+
+.popup.sign_up .left a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 20px;
+    background: #c71b1b;
+    transition: all 0.2s;
+}
+
+.popup.sign_up .left a:hover:before {
+    width: 100%;
+}
+
+.popup.sign_up .left h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.075em;
+    font-family: "Playfair Display";
+    padding: 0px 0px 18px;
+    color: #191919;
+}
+
+.popup.sign_up .left p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #191919;
+    width: 300px;
+}
+
+.popup.sign_up .left p strong {
+    display: block;
+}
+
+.popup.sign_up .right {
+    text-align: center;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 30px 0px;
+}
+
+.popup.sign_up .right p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.075em;
+    font-family: "Playfair Display";
+}
+
+.popup.sign_up .right span {
+    font-size: 14px;
+    line-height: 14px;
+    color: #191919;
+    display: block;
+    padding: 20px 0px 34px;
+}
+
+.popup.sign_up .right a {
+    display: block;
+    color: #fff;
+    background: #d43333;
+    font-size: 14px;
+    line-height: 45px;
+    height: 45px;
+    width: 212px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.popup .step {
+    display: none;
+}
+
+.popup .step1 {
+    display: flex;
+}
+
+.popup form ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding-bottom: 20px;
+}
+
+.popup form ul li {
+    display: block;
+}
+
+.popup form ul li label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    outline: none;
+    cursor: pointer;
+}
+
+.popup form ul li input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0px;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    margin-right: 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+.popup form ul li input:after {
+    display: block;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+}
+
+.popup form ul li input:checked:before {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #c71b1b;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 5px;
+}
+
+.popup.sign_up form input[type=text], .popup.sign_up form input[type=email], .popup.sign_up form input[type=password] {
+    height: 45px;
+}
+
+.popup.sign_up form {
+    padding: 10px 28px 10px;
+}
+
+.popup.sign_up form p {
+    padding: 0px 0px 16px;
+}
+
+
+/* -- */
+
+.popup.sign_up_1  {
+    height: 500px;
+}
+
+.popup.sign_up_1 .left {
+    width: 592px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-image: url(../img/week_1.png);
+    background-position: center center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 0px 0px 33px 50px;
+}
+
+.popup.sign_up_1 .left a {
+    position: absolute;
+    top: 33px;
+    right: 50px;
+    color: #191919;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration: underline;
+    padding: 0px 10px;
+    overflow: hidden;
+}
+
+.popup.sign_up_1 .left a span {
+    position: relative;
+}
+
+.popup.sign_up_1 .left a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 20px;
+    background: #c71b1b;
+    transition: all 0.2s;
+}
+
+.popup.sign_up_1 .left a:hover:before {
+    width: 100%;
+}
+
+.popup.sign_up_1 .left h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.075em;
+    font-family: "Playfair Display";
+    padding: 0px 0px 18px;
+    color: #191919;
+}
+
+.popup.sign_up_1 .left p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #191919;
+    width: 300px;
+}
+
+.popup.sign_up_1 .left p strong {
+    display: block;
+}
+
+.popup.sign_up_1 .right {
+    text-align: center;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 30px 0px;
+}
+
+.popup.sign_up_1 .right p {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.075em;
+    font-family: "Playfair Display";
+}
+
+.popup.sign_up_1 .right span {
+    font-size: 14px;
+    line-height: 14px;
+    color: #191919;
+    display: block;
+    padding: 20px 0px 34px;
+}
+
+.popup.sign_up_1 .right a {
+    display: block;
+    color: #fff;
+    background: #d43333;
+    font-size: 14px;
+    line-height: 45px;
+    height: 45px;
+    width: 212px;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+/* -- */
+
+.popup.sign_up_1 form input[type=text], .popup.sign_up_1 form input[type=email], .popup.sign_up_1 form input[type=password] {
+    height: 45px;
+}
+
+.popup.sign_up_1 form {
+    padding: 10px 28px 10px;
+}
+
+.popup.sign_up_1 form p {
+    padding: 0px 0px 16px;
+}
+
+/* -- */
+
+.popup.advertising .inner {
+    width: 580px;
+    height: 390px;
+}
+
+.popup.advertising .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.popup.advertising h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.075em;
+    font-family: "Playfair Display";
+    padding: 0px 0px 18px;
+    color: #191919;
+}
+
+.popup.advertising p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #191919;
+    width: 460px;
+    text-align: center;
+}
+
+.popup.advertising p strong {
+    display: block;
+    padding: 15px 0 30px;
+}
+
+.popup.advertising .button {
+    cursor: pointer;
+    display: block;
+    width: 210px;
+    height: 45px;
+    line-height: 45px;
+    background: #d33232;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0px auto 7px;
+}
+
+/* -- */
+
+.popup.chat_show {
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 90px;
+    padding-bottom: 100px;
+}
+
+.popup.chat_show .inner {
+    width: 417px;
+    height: 770px;
+}
+
+.popup.chat_show .inner .close {
+    left: 10px;
+}
+
+.popup.chat_show .hero {
+    width: 100%;
+    max-height: 45px;
+    padding-top: 30px;
+}
+
+.popup.chat_show .hero ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 0.075em;
+    padding: 20px 20px 30px;
+    border-bottom: 1px solid #f2f2f2;
+    box-sizing: border-box;
+}
+
+.popup.chat_show .hero a {
+    color: #000;
+}
+
+.popup.chat_show .status {
+    width: 100%;
+    max-height: 25px;
+}
+
+.popup.chat_show .status ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.075em;
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #f2f2f2;
+    color: #000;
+    font-family: "Playfair Display";
+    font-weight: 700;
+}
+
+.popup.chat_show .status li {
+    display: flex;
+    align-items: center;
+}
+
+.popup.chat_show .status .green_color {
+    color: #38c513;
+    font-weight: normal;
+    font-family: "SF UI Text", sans-serif;
+}
+
+.popup.chat_show .status i {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: url("../../assets/img/model_1.png") no-repeat 50% 0%;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.popup.chat_show .content_caption {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #000;
+    opacity: .4;
+}
+
+.popup.chat_show .content_caption span {
+    display: block;
+    width: 110px;
+    height: 1px;
+    background: #d6d6d6;
+    margin: 0 10px;
+}
+
+.popup.chat_show .message {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    color: #191919;
+    padding: 10px 20px;
+}
+
+.popup.chat_show .message .right_content {
+    text-align: right;
+}
+
+.popup.chat_show .message .time {
+    color: #000;
+    opacity: .4;
+}
+
+.popup.chat_show .message .name {
+    font-size: 16px;
+    line-height: 16px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    font-family: "Playfair Display";
+    font-weight: 700;
+}
+
+.popup.chat_show .typing {
+    padding-left: 85px;
+    background: url(../../assets/img/typing.png) no-repeat 20px 7%;
+}
+
+.popup.chat_show .write_message {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 9px;
+}
+
+.popup.chat_show input {
+    width: 67%;
+    height: 46px;
+    font-size: 14px;
+    line-height: 46px;
+    padding: 0 15px;
+}
+
+.popup.chat_show .button {
+    cursor: pointer;
+    display: block;
+    width: 135px;
+    height: 50px;
+    line-height: 50px;
+    background: #d33232;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}

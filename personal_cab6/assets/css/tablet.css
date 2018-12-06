@@ -1,0 +1,334 @@
+@media(max-width: 1169px) {
+    .container {
+        width: 768px;
+        padding: 0 20px 30px 20px;
+    }
+
+    section.grid {
+        padding-bottom: 0px;
+    }
+
+    body {
+        padding-top: 60px;
+    }
+
+    header {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 11;
+    }
+
+    header .container {
+        width: auto;
+        height: 60px;
+        padding: 0px 20px;
+    }
+
+    header .left, header .right {
+        width: 300px;
+    }
+
+    header .center {
+        width: 160px;
+        text-align: center;
+    }
+
+    header .left .city span {
+        color: #5a5a5a;
+    }
+
+    header .right > a {
+        padding: 0px 20px;
+    }
+
+    header .center {
+        display: block;
+    }
+
+    header .center a {
+        display: none;
+    }
+
+    header .center a.logo {
+        display: block;
+    }
+
+    header .right > a.open_menu {
+        display: block;
+        width: 31px;
+        height: 22px;
+        background-image: url(../svg/Menu.svg);
+        background-size: 100% 100%;
+        margin: 0px 0px 0px 20px;
+        transition: all 0.3s;
+    }
+    
+    header .right > a.open_menu.open {
+        width: 23px;
+        height: 24px;
+        background-image: url(../svg/Close.svg);
+    }
+
+    /* -- */
+
+    .all_left .img {
+        width: 320px;
+        height: 415px;
+        margin-bottom: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .all_left .location {
+        top: 375px;
+    }
+
+    .all_comments .btn-red,
+    .all_comments .btn-white {
+        margin: 10px 0;
+    }
+
+    /* -- */
+
+    .personal_cab {
+        margin-top: 40px;
+    }
+
+    /* -- */
+
+    .profile {
+        margin: 0;
+    }
+
+    /* -- */
+
+    .girl {
+        width: 374px;
+        height: 498px;
+    }
+
+    .girls_of_week {
+        width: 100%;
+        height: 498px;
+    }
+
+    /* -- */
+
+    section.top {
+        padding-top: 15px;
+        padding-bottom: 40px;
+    }
+
+    /* -- */
+
+    main {
+        display: block;
+    }
+
+    main > section {
+        width: 100%;
+    }
+
+    a.girl.girl_video {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        display: block;
+        padding-top: 0px;
+    }
+
+    /* -- */
+
+    section.chat {
+        padding: 37px 30px;
+        margin: 15px auto 25px;
+    }
+
+    /* -- */
+
+    section.region {
+        margin-bottom: 30px;
+    }
+
+    section.region > div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    section.region > div > a {
+        box-sizing: border-box;
+        width: 33.3%;
+        margin-bottom: 60px;
+    }
+
+    section.region > div > a:nth-child(4), section.region > div > a:nth-child(5) {
+        margin-bottom: 0px;
+    }
+
+    /* -- */
+
+    section.newest .girl:nth-child(n+14) {
+        display: none;
+    }
+
+
+    /* -- */
+
+    footer {
+        padding: 50px 0px 38px;
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+    }
+
+    footer .col1 {
+        max-width: 326px;
+    }
+
+    footer .links li {
+        padding: 0px 0px 40px;
+    }
+
+    footer .links li:last-child {
+        padding: 0px;
+    }
+
+    footer .links li a {
+        color: #191919;
+        font-size: 13px;
+        line-height: 13px;
+        font-weight: 500;
+    }
+
+    footer .links li a:hover {
+        text-decoration: underline;
+    }
+
+    footer .col5 {
+        text-align: center;
+        width: 100%;
+        flex: 0 1 100%;
+        max-width: none;
+        justify-content: center;
+        margin-top: 10px
+    }
+
+    footer .col5 a {
+        margin: 0px 15px;
+    }
+
+    /* -- */
+
+    #fade {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        z-index: 9;
+        transition: all 0.3s;
+        transform: translate(-100%);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    #fade.active {
+        transform: translate(0%);
+    }
+
+    #menu {
+        position: fixed;
+        box-sizing: border-box;
+        top: 60px;
+        left: 0px;
+        width: 100%;
+        background: #191919;
+        padding: 0px 0px 50px;
+        z-index: 10;
+        text-align: center;
+        transition: all 0.3s;
+        transform: translate(0, -100%);
+    }
+
+    #menu.active {
+        transform: translate(0, 0%);
+    }
+
+    #menu ul:nth-child(1) {
+        width: 100%;
+        width: calc(100% - 64px);
+        border-top: 1px solid #252525;
+        padding: 24px 0px 44px;
+
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #menu ul:nth-child(1) li a {
+        display: block;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 22px;
+        font-weight: 500;
+        padding: 0px 24px;
+        letter-spacing: 0.1em;
+    }
+
+    #menu ul:nth-child(2) li a {
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 0px 0px 32px;
+    }
+    
+    /* -- */
+    
+    .popup .inner {
+        width: 100%!important;
+        height: 100%!important;
+    }
+    
+    #login_slider, .popup .inner .left {
+        width: 60%!important;
+    }
+    
+    .popup .inner .right, .popup .inner form {
+        width: 40%!important;
+    }
+
+}
+
+@media(max-width: 1169px) and (orientation: portrait) {
+    .popup .inner {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+    #login_slider, .popup .inner .left, .popup .inner .right, .popup .inner form {
+        width: 100%!important;
+    }
+    
+    #login_slider, .popup .inner .left {
+        height: 40%!important;
+    }
+    
+    .popup .inner .right, .popup .inner form {
+        height: auto!important;
+    }
+}

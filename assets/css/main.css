@@ -1,0 +1,992 @@
+html, body, header, nav, section, footer, article, main, div, p, h1, h2, h3, ul, li {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+
+section {
+    overflow: hidden;
+}
+
+a, span {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: "SF UI Text", sans-serif;
+    background: #fafafa;
+    color: #414042;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #313131;
+}
+
+h2 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    color: #313131;
+}
+
+h3 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #313131;
+}
+
+h4 {
+    font-family: "SF UI Text", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #313131;
+}
+
+a {
+    text-decoration: none;
+    color: #414042;
+}
+
+@media(min-width: 1170px){
+    .hide_desktop {
+        display: none!important;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1169px){
+    .hide_tablet {
+        display: none!important;
+    }
+}
+
+@media(max-width:767px){
+    .hide_mobile {
+        display: none!important;
+    }
+}
+
+/* -- */
+
+header {
+    background: #191919;
+}
+
+header .container {
+    width: 1380px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .left, header .right {
+    width: 330px;
+}
+
+header .center {
+    width: 720px;
+}
+
+@media(max-width: 1379px){
+    header .container {
+        width: calc(100% - 20px);
+    }
+    header .center {
+        width: 550px;
+    }
+}
+
+header .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .left .city {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+header .left .city span {
+    color: #5a5a5a;
+}
+
+header .left .lang {
+    margin-left: 30px;
+}
+
+header .left .lang a {
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    transition: all 0.2s;
+}
+
+header .left .lang a:hover, header .left .lang a.active {
+    background: #303030;
+    color: rgba(255, 255, 255, 1);
+}
+
+header .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .right a, a.login, a.sign_up {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 1px;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0px 50px;
+}
+
+a.login {
+    background: #fff;
+    color: #191919;
+}
+
+.sign_up {
+    color: #fff;
+    border: 1px solid #474747;
+    margin-left: 10px;
+}
+
+header .center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .center a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    padding: 7px 6px;
+    overflow: hidden;
+}
+
+header .center a span {
+    position: relative;
+}
+
+header .center a:before {
+    content: "";
+    display: block;
+    background: #c71b1b;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    left: -100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+header .center a:hover:before {
+    left: 0px;
+}
+
+header .center a.logo {
+    color: #c71b1b;
+    font-family: "Playfair Display";
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+}
+
+header .center a.logo:before {
+    content: initial;
+}
+
+/* -- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0px 62px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    display: block;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 14px;
+    color: #000;
+}
+
+nav > div {
+    color: #000;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav > div span {
+    color: #bfbebe;
+}
+
+nav > div:before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 1px solid #e8e8e8;
+    background-image: url(../svg/search.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 35px;
+    margin: 0px 14px 0px 0px;
+    cursor: pointer;
+}
+
+/* -- */
+
+section.grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+section.grid h1 {
+    flex: 0 1 100%;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+section.grid h1 > a {
+    font-family: "SF UI Text", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+}
+
+section.grid h1 > a:hover {
+    text-decoration: underline;
+}
+
+.girl {
+    display: block;
+    width: 280px;
+    height: 374px;
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    -moz-box-shadow:    0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    box-shadow:         0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+}
+
+.girl span.age {
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.girl span.verification {
+    position: absolute;
+    top: 21px;
+    right: 18px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.girl span.name {
+    font-size: 16px;
+    line-height: 16px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    position: absolute;
+    left: 0px;
+    bottom: -34px;
+    font-family: "Playfair Display";
+    font-weight: 700;
+}
+
+.girl span.rank {
+    position: absolute;
+    right: 10px;
+    font-size: 13px;
+    line-height: 13px;
+    bottom: -32px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.girl span.rank:after {
+    position: absolute;
+    right: -13px;
+    bottom: -2px;
+    content: "";
+    display: block;
+    background-image: url(../img/arr_up.png);
+    width: 5px;
+    height: 18px;
+    background-size: 100% 100%;
+}
+
+.girl span.city {
+    color: #000;
+    font-size: 14px;
+    line-height: 14px;
+    position: absolute;
+    right: 0px;
+    bottom: -33px;
+}
+
+.girls_of_week {
+    width: 578px;
+    height: 374px;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    -moz-box-shadow:    0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    box-shadow:         0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 52px 0px 0px 40px;
+}
+
+.girls_of_week > p {
+    color: #191919;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Playfair Display";
+    padding: 0px 0px 18px;
+    position: relative;
+}
+
+.girls_of_week > span {
+    color: #747474;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 270px;
+    display: block;
+    position: relative;
+}
+
+.girls_of_week .inner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.girls_of_week .inner a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    outline: none;
+}
+
+.girls_of_week .inner .slick-list{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.girls_of_week .inner .slick-track {
+    height: 100%;
+}
+
+.girls_of_week .inner .slick-slide > div {
+    height: 100%;
+}
+
+.girls_of_week .inner a > p {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: #000;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 100px;
+}
+
+.girls_of_week .slick-dots {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.girls_of_week .slick-dots li {
+    display: block;
+    margin: 0px 4px;
+}
+
+.girls_of_week .slick-dots li button {
+    display: block;
+    background: none;
+    outline: none;
+    width: 10px;
+    height: 10px;
+    font-size: 0px;
+    line-height: 0px;
+    border: 1px solid #1d1d1c;
+    box-sizing: border-box;
+    padding: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.girls_of_week .slick-dots li.slick-active button {
+    width: 12px;
+    height: 12px;
+    background: #ff0000;
+    border: 0px;
+}
+
+/* -- */
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+main > section {
+    width: 860px;
+}
+
+.grid.popular .girl {
+    margin-bottom: 75px;
+}
+
+a.girl.girl_video {
+    width: 570px;
+}
+
+a.girl.girl_video i {
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #d7e1e7;
+    border-radius: 30px;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    background-image: url(../img/play.png);
+    background-repeat: no-repeat;
+    background-position: 55% center;
+    background-size: 18px;
+    transition: all 0.2s;
+}
+
+a.girl.girl_video i:hover {
+    background-color: rgba(116, 116, 116, 0.5);
+}
+
+a.girl.girl_video iframe {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+aside {
+    width: 280px;
+    display: block;
+    padding-top: 54px;
+}
+
+.last_visited {
+    margin-bottom: 15px;
+}
+
+.last_visited .girl {
+    background: #fff;
+}
+
+.last_visited .girl .inner {
+    position: absolute;
+    top: 53px;
+    left: 42px;
+    right: 42px;
+    bottom: 58px;
+    background-position: center top;
+    background-size: cover;
+}
+
+.last_visited .girl p {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 0.075em;
+}
+
+.last_visited .girl > a.all {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+.last_visited .girl > a.all:hover {
+    text-decoration: underline;
+}
+
+.last_visited .girl span.age {
+    bottom: 22px;
+    color: #000;
+    left: 20px;
+    top: auto;
+}
+
+.last_visited .girl span.city {
+    bottom: 22px;
+    right: 20px;
+}
+
+aside .special {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    -moz-box-shadow:    0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    box-shadow:         0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    text-align: center;
+    padding: 66px 0px 50px;
+    background-image: url(../img/special_offer.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+
+aside .special span {
+    color: #191919;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    display: block;
+    padding: 0px 0px 24px;
+    letter-spacing: 0.2em;
+}
+
+aside .special p {
+    color: #c71b1b;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 0px 0px 21px;
+}
+
+aside .special a {
+    display: inline-block;
+    background: #191919;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 40px;
+    height: 40px;
+    padding: 0px 23px;
+}
+
+aside .last_reviews {
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    -moz-box-shadow:    0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    box-shadow:         0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    padding: 20px 20px 25px;
+}
+
+aside .last_reviews h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    padding: 0px 0px 20px;
+}
+
+aside .last_reviews ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 53px;
+}
+
+aside .last_reviews ul li .img {
+    width: 78px;
+    height: 105px;
+    background-position: center top;
+    background-size: cover;
+}
+
+aside .last_reviews ul li .info {
+    width: 142px;
+}
+
+aside .last_reviews ul li .info span {
+    color: #000000;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0px 0px 14px;
+    display: block;
+}
+
+aside .last_reviews ul li .info p {
+    font-size: 13px;
+    line-height: 22px;
+    color: #747474;
+    overflow: hidden;
+    height: 66px;
+    margin: 0px 0px 4px;
+}
+
+aside .last_reviews ul li .info a {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    position: relative;
+}
+
+aside .last_reviews ul li .info a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 7px;
+    background-image: url(../img/arr_right.png);
+    background-size: 100% 100%;
+    bottom: -10px;
+    right: -24px;
+    opacity: 0.2;
+}
+
+aside .last_reviews ul li .info a:hover {
+    text-decoration: underline;
+}
+
+aside .last_reviews ul li .info a i {
+    position: absolute;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    text-decoration: none!important;
+    bottom: -35px;
+    right: -58px;
+    font-style: normal;
+}
+
+aside .last_reviews > a {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 12px;
+    padding: 11px 0px 0px;
+}
+
+aside .last_reviews > a:hover {
+    text-decoration: underline;
+}
+
+/* -- */
+
+section.chat {
+    background: #f0f0f0;
+    padding: 37px 99px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+section.chat h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0px 0px 14px;
+}
+
+section.chat p {
+    font-size: 14px;
+    line-height: 14px;
+    color: #747474;
+    letter-spacing: 0.01em;
+}
+
+section.chat p strong {
+    color: #191919;
+    font-size: 16px;
+}
+
+section.chat a {
+    display: block;
+    width: 182px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #d12e2e;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;    
+}
+
+/* -- */
+
+section.region {
+    margin-bottom: 30px;
+}
+
+section.region h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    padding: 0px 0px 48px;
+}
+
+section.region > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.region > div > a {
+    display: block;
+    padding: 24px 0px 0px 94px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 89px;
+    height: 117px;
+    transition: all 0.2s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+section.region > div > a:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+section.region > div > a p {
+    font-size: 16px;
+    line-height: 16px;
+    color: #191919;
+    text-transform: uppercase;
+    font-family: "Playfair Display";
+    font-weight: 700;
+    letter-spacing: 0.075em;
+    padding: 0px 0px 8px;
+}
+
+section.region > div > a span {
+    font-size: 14px;
+    line-height: 14px;
+    color: #747474;
+}
+
+section.region > div > a.loc_nw {
+    background-image: url(../img/loc_nw.png)
+}
+
+section.region > div > a.loc_ne {
+    background-image: url(../img/loc_ne.png)
+}
+
+section.region > div > a.loc_c {
+    background-image: url(../img/loc_c.png)
+}
+
+section.region > div > a.loc_s {
+    background-image: url(../img/loc_s.png)
+}
+
+section.region > div > a.loc_i {
+    background-image: url(../img/loc_i.png)
+}
+
+/* -- */
+
+section.newest .girl {
+    margin-bottom: 75px;
+}
+
+/* -- */
+
+footer {
+    max-width: 1380px;
+    margin: 0 auto;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 50px 0px 75px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer .col1 {
+    max-width: 330px;
+}
+
+footer .col1 h3 {
+    color: #c71b1b;
+    letter-spacing: 0.06em;
+    padding: 0px 0px 14px;
+}
+
+footer .col1 p {
+    color: #747474;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 0px 0px 24px;
+}
+
+footer .col1 p:last-child a {
+    color: #191919;
+    font-weight: 500;
+}
+
+footer .col1 p:last-child a:hover {
+    text-decoration: underline;
+}
+
+footer .links li {
+    padding: 0px 0px 40px;
+}
+
+footer .links li:last-child {
+    padding: 0px;
+}
+
+footer .links li a {
+    color: #191919;
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 500;
+}
+
+footer .links li a:hover {
+    text-decoration: underline;
+}
+
+footer .col5 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 182px;
+}
+
+footer .col5 h3 {
+    flex: 0 1 100%;
+    letter-spacing: 0.02em;
+    padding-bottom: 18px;
+    color: #191919;
+}
+
+footer .col5 p {
+    flex: 0 1 100%;
+    color: #191919;
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 25px;
+    font-weight: 600;
+}
+
+footer .col5 a.soc {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+footer .col5 a.soc.fb {
+    background-image: url(../svg/facebook.svg);
+    background-size: auto 18px;
+}
+
+footer .col5 a.soc.ig {
+    background-image: url(../svg/instagram-logo.svg);
+    background-size: 19px;
+}
+
+footer .col5 a.soc.tw {
+    background-image: url(../svg/twitter.svg);
+    background-size: 19px;
+}
+
+p.copyright {
+    color: #bfbebe;
+    text-align: center;
+    display: block;
+    padding: 20px 0px;
+    font-size: 13px;
+}

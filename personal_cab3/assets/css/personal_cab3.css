@@ -1,0 +1,547 @@
+@media (min-width: 1169px) {
+    .hide_desctop {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1169px) {
+    .hide_tablet_and_mobile {
+        display: none !important;
+    }
+}
+
+/* -- */
+
+.special_wrap {
+    background: #fff;
+    padding: 10px;
+}
+
+.special {
+    padding: 25px 0 20px;
+    border: 1px dashed #f9e8e8;
+    text-align: center;
+    font-size: 14px;
+    color: #191919;
+}
+
+.special .offer {
+    letter-spacing: 0.075em;
+}
+
+.special .price {
+    font-family: "Playfair Display";
+    font-size: 60px;
+    font-weight: 700;
+    color: #c71b1b;
+    padding: 10px 0;
+}
+
+.special .bonus {
+    padding-bottom: 20px;
+}
+
+/* -- */
+
+.btn-red {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.075em;
+    border-radius: 2px;
+    background-image: -moz-linear-gradient(90deg, rgb(199, 27, 27) 0%, rgb(214, 55, 55) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(199, 27, 27) 0%, rgb(214, 55, 55) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(199, 27, 27) 0%, rgb(214, 55, 55) 100%);
+    transition: all 0.2s;
+}
+
+.btn-red:hover {
+    background-image: -moz-linear-gradient( 270deg, rgb(218,75,75) 0%, rgb(201,47,47) 100%);
+    background-image: -webkit-linear-gradient( 270deg, rgb(218,75,75) 0%, rgb(201,47,47) 100%);
+    background-image: -ms-linear-linear-gradient( 270deg, rgb(218,75,75) 0%, rgb(201,47,47) 100%);
+}
+
+/* -- */
+
+.photo_and_video {
+    font-size: 14px;
+    line-height: 24px;
+    background: #fff;
+    padding: 30px 15px 30px 30px;
+}
+
+.photo_and_video h3 {
+    flex: 0 1 100%;
+    font-family: "SF UI Text", sans-serif;
+    color: #191919;
+    padding-bottom: 20px;
+}
+
+.photo_and_video p {
+    padding-bottom: 25px;
+}
+
+.photo_and_video span {
+    color: #666;
+}
+
+/* -- */
+
+.spoiler-wrap {
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.spoiler-head {
+    background: url(../../assets/img/arrow_up.png) no-repeat 93% 50%;
+    cursor: pointer;
+    padding: 23px;
+    color: #191919;
+    font-weight: 700;
+}
+
+.spoiler-wrap.disabled .spoiler-body {
+    display: none
+}
+
+.spoiler-wrap.active .spoiler-head {
+    background: url(../../assets/img/arrow_down.png) no-repeat 93% 50%;
+}
+
+@media(min-width: 768px) and (max-width: 1169px){
+    .spoiler-head,
+    .spoiler-wrap.active .spoiler-head {
+        background-position:  96% 50%;
+    }
+}
+
+/* -- */
+
+h1 {
+    flex: 0 1 100%;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.personal_cab main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 95px;
+}
+
+.personal_cab main > section {
+    width: 860px;
+}
+
+aside {
+    width: 280px;
+    display: block;
+}
+
+.menu_cab {
+    background: #fff;
+    padding: 40px 0 60px;
+    margin-bottom: 1px;
+    box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+}
+
+.menu_cab .active {
+    border-left: 2px solid #c71b1b;
+}
+
+.menu_cab a {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #191919;
+    padding: 7px 58px;
+    margin-bottom: 7px;
+}
+
+.menu_cab a:hover {
+    text-decoration: underline;
+}
+
+.logout {
+    background: #fff;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+}
+
+.logout a {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #191919;
+    padding: 18px 0;
+    text-align: center;
+    opacity: .5;
+}
+
+.logout a:hover {
+    text-decoration: underline;
+}
+
+/* -- */
+
+.last_visited {
+    margin-bottom: 15px;
+}
+
+.last_visited .girl {
+    background: #fff;
+}
+
+.last_visited .girl .inner {
+    position: absolute;
+    top: 53px;
+    left: 42px;
+    right: 42px;
+    bottom: 58px;
+    background-position: center top;
+    background-size: cover;
+    transition: all 0.2s;
+}
+
+.last_visited .girl .inner:hover {
+    transform: scale(1.1);
+}
+
+.last_visited .girl p {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    font-family: "Playfair Display";
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 0.075em;
+}
+
+.last_visited .girl > a.all {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+.last_visited .girl > a.all:hover {
+    text-decoration: underline;
+}
+
+.last_visited .girl span.age {
+    bottom: 22px;
+    color: #000;
+    left: 20px;
+    top: auto;
+}
+
+.last_visited .girl span.city {
+    bottom: 22px;
+    right: 20px;
+}
+
+/* -- */
+
+.personal_cab .btn_filter {
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    color: #191919;
+    padding: 17px 0;
+    text-align: center;
+    margin-bottom: 4px;
+    background: #fff url("../../assets/img/menu_icon.png") no-repeat 44.5% 50%;
+    box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+}
+
+section.grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section.grid .sort {
+    flex: 0 1 100%;
+    text-align: right;
+    padding-bottom: 13px;
+    font-size: 14px;
+    color: #191919;
+}
+
+section.grid .sort_select {
+    border-radius: 3px;
+    font-weight: 700;
+    border-color: #e5e5e5;
+    padding: 10px 16px;
+    margin-left: 10px;
+    background: #fafafa;
+
+}
+
+@media (max-width: 767px) {
+    section.grid .sort {
+        text-align: left;
+    }
+
+    section.grid .sort_select {
+        margin-left: 0;
+        margin-top: 5px;
+        width: 100%;
+    }
+}
+
+section.grid .sort_select option {
+    padding: 8px;
+}
+
+section.grid .sort_select:active,
+section.grid .sort_select:focus {
+    border-color: #bfbebe;
+    outline: none;
+}
+
+section.grid .sort_select:hover {
+    border-color: #e6dbdb;
+}
+
+.girl {
+    display: block;
+    width: 280px;
+    height: 374px;
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    position: relative;
+}
+
+.bg_img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+.bg_img > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-position: center top;
+    background-size: cover;
+    transition: all 0.2s;
+}
+
+.bg_img:hover > div {
+    transform: scale(1.1);
+}
+
+.girl span.age {
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.girl span.verification {
+    position: absolute;
+    top: 21px;
+    right: 40px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.girl span.vip {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.girl span.location {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.girl span.name {
+    font-size: 16px;
+    line-height: 16px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    position: absolute;
+    left: 0px;
+    bottom: -34px;
+    font-family: "Playfair Display";
+    font-weight: 700;
+}
+
+.girl span.rank {
+    position: absolute;
+    right: 10px;
+    font-size: 13px;
+    line-height: 13px;
+    bottom: -32px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.girl span.rank:after {
+    position: absolute;
+    right: -13px;
+    bottom: -2px;
+    content: "";
+    display: block;
+    background-image: url(../img/arr_up.png);
+    width: 5px;
+    height: 18px;
+    background-size: 100% 100%;
+}
+
+.girl span.city {
+    color: #000;
+    font-size: 14px;
+    line-height: 14px;
+    position: absolute;
+    right: 0px;
+    bottom: -33px;
+}
+
+.girls_of_week {
+    width: 578px;
+    height: 374px;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    box-shadow: 0px 0px 6px 0px rgba(34, 34, 34, 0.04);
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 52px 0px 0px 40px;
+}
+
+.girls_of_week > p {
+    color: #191919;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Playfair Display";
+    padding: 0px 0px 18px;
+    position: relative;
+}
+
+.girls_of_week > span {
+    color: #747474;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 270px;
+    display: block;
+    position: relative;
+}
+
+.girls_of_week .inner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.girls_of_week .inner a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    outline: none;
+}
+
+.girls_of_week .inner .slick-list {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.girls_of_week .inner .slick-track {
+    height: 100%;
+}
+
+.girls_of_week .inner .slick-slide > div {
+    height: 100%;
+}
+
+.girls_of_week .inner a > p {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: #000;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 100px;
+}
+
+.girls_of_week .slick-dots {
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.girls_of_week .slick-dots li {
+    display: block;
+    margin: 0px 4px;
+}
+
+.girls_of_week .slick-dots li button {
+    display: block;
+    background: none;
+    outline: none;
+    width: 10px;
+    height: 10px;
+    font-size: 0px;
+    line-height: 0px;
+    border: 1px solid #1d1d1c;
+    box-sizing: border-box;
+    padding: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.girls_of_week .slick-dots li.slick-active button {
+    width: 12px;
+    height: 12px;
+    background: #ff0000;
+    border: 0px;
+}
+
+/* -- */
+
+section.newest .girl {
+    margin-bottom: 75px;
+}

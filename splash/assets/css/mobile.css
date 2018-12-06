@@ -1,0 +1,54 @@
+@media(max-width: 767px){
+
+    .container {
+        width: 320px;
+    }
+
+    h1 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    h2 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .splash main {
+        background-size: cover;
+    }
+
+    .splash h1 {
+        font-size: 32px;
+    }
+
+    .splash .buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .splash .buttons .btn-red {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .footer_bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+        border: none;
+    }
+
+    .footer_bottom .lang {
+        position: absolute;
+        top: 33px;
+        margin: 0;
+    }
+
+    .footer_bottom .copyright {
+        margin-top: 45px;
+        padding: 15px 0 5px;
+        border-top: 1px solid #dad4d4;
+    }
+
+
+}
